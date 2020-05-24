@@ -44,9 +44,16 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#branch#enabled = 1
 
 " Binding for nerdtree ----------
 map <leader>f :NERDTreeToggle<CR>
+
+" Ranger Setup ---------
+let g:NERDTreeHijackNetrw = 0
+let g:ranger_replace_netrw = 1
+let g:ranger_map_keys = 0
+map <leader>r :Ranger<CR>
 
 " Emmet redefine in all modes ----------
 let g:user_emmet_mode='a'
